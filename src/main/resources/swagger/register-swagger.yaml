@@ -1,0 +1,69 @@
+swagger: '2.0'
+info:
+  version: '1.0'
+  title: Register API
+schemes:
+  - https
+host: sensedia.com
+basePath: /register/v1
+tags:
+  - name: Registrations
+    description: Registration operations.
+parameters:
+  AcceptLanguage:
+    name: Accept-Language
+    description: Response message language.
+    in: header
+    type: string
+    default: en-US
+    enum:
+      - en-US
+      - pt-BR
+paths:
+  '/registrations':
+    parameters:
+      - $ref: '#/parameters/AcceptLanguage'
+    get:
+      tags:
+        - Registrations
+      summary: Find register information
+      produces:
+        - application/json
+      parameters:
+        - in: query
+          name: document
+          type: string
+          description: Client document
+          required: true
+      responses:
+        '200':
+          description: Success
+          schema:
+            $ref: '#/definitions/RegistrationResponse'
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '412':
+          description: Precondition Failed
+          schema:
+            $ref: '#/definitions/Error'
+        '500':
+          description: Internal Server Error
+definitions:
+  Error:
+    type: object
+    properties:
+      code:
+        type: string
+        description: Error code
+      message:
+        type: string
+        description: Error message
+  RegistrationResponse:
+    type: object
+    properties:
+      score:
+        type: number
+        description: Client score
+        example: 800

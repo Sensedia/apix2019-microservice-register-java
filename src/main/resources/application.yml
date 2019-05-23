@@ -1,0 +1,14 @@
+server:
+  servlet:
+    context-path: /register/v1
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "actuator,logfile,metrics,health,info"
+
+logging:
+  path: .
+  file: register.log
+  level:
+    root: info
