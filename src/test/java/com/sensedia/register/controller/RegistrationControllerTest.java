@@ -10,7 +10,6 @@ import org.mockito.InjectMocks;
 import org.springframework.http.HttpStatus;
 import org.springframework.mock.web.MockHttpServletResponse;
 
-import com.sensedia.register.controller.RegistrationController;
 import com.sensedia.register.exception.MessageError;
 import com.sensedia.register.exception.Messages;
 import com.sensedia.register.response.RegistrationResponse;
