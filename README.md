@@ -1,6 +1,19 @@
 # Descrição
 Mock Cadastro Positivo: Consulta de Score
 
+# Clone do projeto
+Para fazer clone, execute o comando abaixo na pasta de sua preferência:
+
+```
+git clone
+```
+
+Certifique-se que está na branch master
+
+```
+git branch
+```
+
 # Build
 Para build do projeto são necessárias as seguintes ferramentas:
 
