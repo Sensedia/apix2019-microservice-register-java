@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.sensedia</groupId>
 	<artifactId>apix2019-microservice-register-java</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0</version>
 	<name>apix2019-microservice-register-java</name>
 	<description>Register API</description>
 
