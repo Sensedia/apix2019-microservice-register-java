@@ -34,4 +34,4 @@ Para executar a aplicação acessar pasta target: cd /target e executar o comand
 java -jar apix2019-microservice-register-java-1.0.jar
 ```
 
-A aplicação irá subir, por padrão, na porta 8080.
+A aplicação irá subir, por padrão, na porta 4242.
