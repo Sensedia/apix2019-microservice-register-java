@@ -5,7 +5,7 @@ Mock Cadastro Positivo: Consulta de Score
 Para fazer clone, execute o comando abaixo na pasta de sua preferência:
 
 ```
-git clone
+git clone https://github.com/Sensedia/apix2019-microservice-register-java.git
 ```
 
 Certifique-se que está na branch master
